@@ -1,9 +1,9 @@
 # Using user-managed identity in Azure Databricks
-*Disclaimer*  this MSI solution does not work with managed storage that was created with Databricks. This solution works with external storages (standalone storages)
+*Disclaimer*  this MSI solution does not work with managed storage that was created with Databricks. This solution works with external Azure storages (standalone storages)
 
-## problem
+## Problem
 You cannot use secrets or certificates anymore because your security stance are restricter now. your option is federated identity setup using managed identity.
-With Azure databricks, MI is not supported without Unity Catalog and you cannot enable Unity Catalog for some reason.
+With Azure databricks, MSI is not supported without Unity Catalog and you cannot enable Unity Catalog for some reason.
 
 ### Pre-requisites
 1. make sure you have user assigned identity created in managed resource - it's named dbmanagedidentity
