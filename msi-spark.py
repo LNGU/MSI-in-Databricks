@@ -4,7 +4,7 @@
 standalone_storage_account_name = "your_azure_storage_name_here" #do not use storage that is inside your managed resource group. it does not work as of 4/1/2025
 container_name = "your_blob_container_name"
 file_path = "your_csv_file_name" #for this sample, use a csv file.
-client_id = "your_msi_client_id_under_enterprise_application_SPN"
+client_id = "your_client_id_of_the_MSI_named_dbmanagedidentity"
 tenant_id = "your_own_tenant_id_here"
 
 
@@ -19,4 +19,3 @@ df = (spark.read
   .load("abfss://"+container_name+"@"+standalone_storage_account_name+".dfs.core.windows.net/"+file_path)
 )
 df.show()
-#if you run into an error related to softDelete, read FAQ on the readme file
