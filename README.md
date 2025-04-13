@@ -1,4 +1,5 @@
 # Using user-managed identity in Azure Databricks
+#securingAzure
 *Disclaimer*  this MSI solution does not work with the managed storage that was created with Databricks. This solution works with external Azure storages (standalone storages)
 
 ## Problem
