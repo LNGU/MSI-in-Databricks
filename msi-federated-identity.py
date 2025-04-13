@@ -4,7 +4,7 @@ from azure.storage.blob import BlobServiceClient
 
 # Define necessary variables
 tenant_id = "your_azure_tenant_id"  # Replace with your tenant ID
-client_id = "your_app_registration_client_id_with_federated_identity"  # Replace with your app client ID/app Registration
+client_id = "your_app_registration_client_id_with_federated_identity_configured"  # Replace with your app client ID/app Registration
 
 # Define a function to get the assertion token
 def get_assertion_token():
