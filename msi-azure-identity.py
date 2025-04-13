@@ -1,6 +1,3 @@
-#working sample - using Azure Identity with managed identity
-#make sure to verify/install these libraries
-
 from azure.storage.blob import BlobServiceClient
 from azure.identity import ManagedIdentityCredential
 
