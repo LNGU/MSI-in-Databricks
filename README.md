@@ -22,4 +22,4 @@ With Azure databricks, MSI is not supported without Unity Catalog and you cannot
 Q : I got an error related to softDelete. what do I do? \
 A : go to your storage settings and uncheck enable softdelete option. this one only happens with using Spark. If unchecking the setting is not an option, explore other ways to connect such as Azure Blob SDK. \
 Q : I don't have access to the subscription and cannot add as MSI, what do I do? \
-A : you can use Azure identity code but not able to use spark based code. so you have to use a different libraries such as Python deltalake. \
+A : you can use Azure identity code but not able to use spark based code. so you have to use a different libraries such as Python deltalake. 
