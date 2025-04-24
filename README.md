@@ -1,6 +1,8 @@
 # Using user-managed identity in Azure Databricks
 #securingAzure \
-*Disclaimer*  this MSI solution does not work with the managed storage that is created with Databricks managed resource group, as it is not recommended to be used as a normal storage. The storage is more like a cache for compute. \ This solution works with external Azure storages (standalone storages), preferably within the same subscription. \ This solution does not work with mounting
+*Disclaimer*  this MSI solution does not work with the managed storage that is created with Databricks managed resource group, as it is not recommended to be used as a normal storage. The storage is more like a cache for compute. 
+This solution works with external Azure storages (standalone storages), preferably within the same subscription.
+This solution does not work with mounting.
 
 ## Problem
 You cannot use secret or certificate anymore because your security stance are restricter now. Your option is federated identity setup using managed identity.
