@@ -5,7 +5,7 @@ from azure.identity import ManagedIdentityCredential
 account_name = "your_azure_storage_name"
 container_name = "your_blob_container_name"
 file_path = "your_csv_file_name" #for this sample, use a csv file
-client_id = "your_msi_client_id_under_enterprise_application_SPN"
+client_id = "your_MSI_client_id"
 
 # Construct the Blob Service Client using Managed Identity
 credential = ManagedIdentityCredential(client_id=client_id) 
